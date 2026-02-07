@@ -1,0 +1,43 @@
+{
+  "name": "claude-memory-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that gives Claude persistent memory across conversations via local markdown files",
+  "author": "nocluetoday",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nocluetoday/claude-memory-mcp"
+  },
+  "keywords": [
+    "claude",
+    "mcp",
+    "memory",
+    "persistent",
+    "model-context-protocol",
+    "ai",
+    "llm"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
