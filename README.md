@@ -53,9 +53,15 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 }
 ```
 
-#### Claude Code
+#### Claude Code (CLI)
 
-Add to `~/.claude/settings.json`:
+The easiest way is the `claude mcp add` command:
+
+```bash
+claude mcp add claude-memory --transport stdio -- node /absolute/path/to/claude-memory-mcp/dist/index.js
+```
+
+Or add it manually to `.mcp.json` in your project root (shared with your team) or `~/.claude.json` (personal, all projects):
 
 ```json
 {
@@ -67,6 +73,16 @@ Add to `~/.claude/settings.json`:
   }
 }
 ```
+
+You can also import servers already configured in Claude Desktop:
+
+```bash
+claude mcp add-from-claude-desktop
+```
+
+#### Claude Web (claude.ai)
+
+Claude.ai only supports **remote** MCP servers through its Integrations feature. Since this is a local stdio server, it won't work directly with the web interface. Use Claude Desktop or Claude Code instead.
 
 Then restart your client.
 
