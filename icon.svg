@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9F7AEA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="doc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#E9D8FD;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96" fill="url(#bg)"/>
+  <!-- Document shape -->
+  <path d="M 160 96 L 320 96 L 384 160 L 384 416 L 128 416 L 128 128 Z" fill="url(#doc)" opacity="0.95"/>
+  <!-- Document fold -->
+  <path d="M 320 96 L 320 160 L 384 160 Z" fill="#D6BCFA" opacity="0.8"/>
+  <!-- Memory/brain circle glow -->
+  <circle cx="256" cy="280" r="72" fill="#6B46C1" opacity="0.15"/>
+  <!-- Infinity/loop symbol representing persistent memory -->
+  <path d="M 208 280 C 208 252 232 236 256 252 C 280 236 304 252 304 280 C 304 308 280 324 256 308 C 232 324 208 308 208 280 Z"
+        fill="none" stroke="#6B46C1" stroke-width="10" stroke-linecap="round"/>
+  <!-- Text lines on document -->
+  <line x1="168" y1="184" x2="280" y2="184" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <line x1="168" y1="208" x2="344" y2="208" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <line x1="168" y1="232" x2="312" y2="232" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  <!-- Bottom text lines -->
+  <line x1="168" y1="348" x2="344" y2="348" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <line x1="168" y1="372" x2="296" y2="372" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  <line x1="168" y1="396" x2="328" y2="396" stroke="#B794F4" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
+</svg>

@@ -12,6 +12,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import * as fs from "fs/promises";
+import * as os from "os";
 import * as path from "path";
 
 // ---------------------------------------------------------------------------
@@ -21,7 +22,7 @@ import * as path from "path";
 /** Directory where memory files are stored. Override with CLAUDE_MEMORY_DIR. */
 const MEMORY_DIR =
   process.env.CLAUDE_MEMORY_DIR ||
-  path.join(process.env.HOME || "~", ".claude-memory");
+  path.join(os.homedir(), ".claude-memory");
 
 // ---------------------------------------------------------------------------
 // Helpers

@@ -1,0 +1,41 @@
+# Source files (only dist/ is needed at runtime)
+src/
+tsconfig.json
+
+# Development files
+.claude/
+.gitignore
+.DS_Store
+.git/
+
+# Template (documentation only)
+soul.md.template
+
+# Lock files
+package-lock.json
+
+# SVG source of icon (PNG is bundled)
+icon.svg
+
+# Dev dependency type definitions and test files
+node_modules/@types/
+node_modules/typescript/
+node_modules/**/test/
+node_modules/**/tests/
+node_modules/**/*.test.*
+node_modules/**/.github/
+node_modules/**/spec/
+node_modules/**/benchmark/
+node_modules/**/example/
+node_modules/**/examples/
+node_modules/**/*.md
+node_modules/**/CHANGELOG*
+node_modules/**/HISTORY*
+node_modules/**/changelog*
+node_modules/**/*.map
+node_modules/**/.prettierrc*
+node_modules/**/.eslint*
+node_modules/**/tsconfig*
+node_modules/**/*.ts
+!node_modules/**/*.d.ts
+!node_modules/**/*.d.cts
